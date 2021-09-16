@@ -12,6 +12,8 @@ app.set("view engine", "ejs")
 
 //tells app to use logger/morgan
 app.use(logger("combined"));
+//tells app to read JSON
+app.use(express.json());
 
 app.use("/api/animal", animalRouter)
 

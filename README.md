@@ -45,6 +45,8 @@ let animalArray = [
 - [x] create a Get request that uses params animalName to query to animal by animalName
 
 - [ ] create a Post request to create a new animal and if there's duplicate in the array, you should let the user know that the animal already exists and please pick another animal. If the user sends in an empty object your program will tell the user "sorry no empty data"
+  - [ ] create animal
+  - [ ] checks for duplicate
 
 - [ ] create a Put request to update the animalName using animalName params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesnt exists it should tell the user animal doesnt exists please check your spelling
 

@@ -38,4 +38,14 @@ router.get("/", function (req, res) {
 	}
 });
 
+router.post("/add-animal", function (req, res) {
+	// res.send("post path!");
+	console.log(req.body);
+	animalArray.push({
+        id: +`${animalArray.length + 1}`,
+        animalName: `${req.body.animalName}`
+    });
+	res.json({ animalArray });
+});
+
 module.exports = router;
