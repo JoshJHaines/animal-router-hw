@@ -40,9 +40,9 @@ let animalArray = [
 
 - [x] create a Get request to query all the animalArray and in the same request if query exists your program should able to query a specific animal using animalName
 
-- [ ] create a Get request that uses params id to query to animal by ID
+- [x] create a Get request that uses params id to query to animal by ID
 
-- [ ] create a Get request that uses params animalName to query to animal by animalName
+- [x] create a Get request that uses params animalName to query to animal by animalName
 
 - [ ] create a Post request to create a new animal and if there's duplicate in the array, you should let the user know that the animal already exists and please pick another animal. If the user sends in an empty object your program will tell the user "sorry no empty data"
 

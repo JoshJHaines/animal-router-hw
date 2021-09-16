@@ -12,24 +12,27 @@ router.get("/", function (req, res) {
 	// res.render("index")
 
 	let foundAnimal = null;
-    //see what the query length is
+	//see what the query length is
 	console.log(`URL QUERY LENGTH: ${Object.keys(req.query).length}`);
 	//if length is 0 then return the full array
-    if (Object.keys(req.query).length === 0) {
+	if (Object.keys(req.query).length === 0) {
 		res.json({ animalArray });
-	//if length is not 0, search for matches
-    } else {
+		//if length is not 0, search for matches
+	} else {
 		animalArray.forEach((animal) => {
 			//if there is a match, set truthy value for search
-            if (animal.animalName === req.query.animal) {
+			if (
+				animal.animalName === req.query.animal ||
+				animal.id === +req.query.id
+			) {
 				foundAnimal = animal;
 			}
 		});
-        //if truthy value is NOT true, return an error to guide user
+		//if truthy value is NOT true, return an error to guide user
 		if (!foundAnimal) {
 			return res.send("Animal not found, please check your spelling");
-		//if truthy value is true, return the animal
-        } else {
+			//if truthy value is true, return the animal
+		} else {
 			return res.json({ foundAnimal });
 		}
 	}
