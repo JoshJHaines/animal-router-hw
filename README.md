@@ -12,10 +12,16 @@
 - [x] init git repo and push to github
 - [x] install express
 - [x] install ejs
-- [ ] install morgan
+- [x] install morgan
 
 ### Start Server
-- [ ]
+- [x] require express
+- [x] app = express()
+- [x] get main route
+  - [x] create path
+  - [x] set views to directory views
+  - [x] set views enjin to ejs
+  - [x] set main path to render index.ejs
 ## Assignment
 ### Assignment Data
 ``` javascript
