@@ -2,6 +2,7 @@
 
 - Submit assignment GitHub repo link in essay box. Remember to use .gitignore node_modules. Commit often
 ## Setup
+### Create app base structure
 - [x] Create new directory
 - [x] 'npm init' to start new project
 - [x] set app.js as "main" in package.json
@@ -9,16 +10,21 @@
 - [x] 'touch .gitignore' and add node_modules
 - [x] Create github repo
 - [x] init git repo and push to github
-- [ ] install express
-- [ ] install ejs
+- [x] install express
+- [x] install ejs
 - [ ] install morgan
+
+### Start Server
+- [ ]
 ## Assignment
 ### Assignment Data
+``` javascript
 let animalArray = [
 { id: 1, animalName: "dog" },
 { id: 2, animalName: "cat" },
 { id: 3, animalName: "hamster" },
 ];
+```
 
 
 ### Assignment Tasks
