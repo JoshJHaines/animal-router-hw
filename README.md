@@ -20,7 +20,7 @@
 - [x] get main route
   - [x] create path
   - [x] set views to directory views
-  - [x] set views enjin to ejs
+  - [x] set views engine to ejs
   - [x] set main path to render index.ejs
 ## Assignment
 ### Assignment Data
@@ -34,9 +34,9 @@ let animalArray = [
 
 
 ### Assignment Tasks
-- [ ] create a animalRouter.js in the router folder
+- [x] create a animalRouter.js in the router folder
 
-- [ ] make sure to require it in app.js
+- [x] make sure to require it in app.js
 
 - [ ] create a Get request to query all the animalArray and in the same request if query exists your program should able to query a specific animal using animalName
 
