@@ -38,7 +38,7 @@ let animalArray = [
 
 - [x] make sure to require it in app.js
 
-- [ ] create a Get request to query all the animalArray and in the same request if query exists your program should able to query a specific animal using animalName
+- [x] create a Get request to query all the animalArray and in the same request if query exists your program should able to query a specific animal using animalName
 
 - [ ] create a Get request that uses params id to query to animal by ID
 

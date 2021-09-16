@@ -1,18 +1,32 @@
-const express = require("express")
-const router = express.Router()
+const express = require("express");
+const router = express.Router();
 
 let animalArray = [
-    { id: 1, animalName: "dog" },
-    { id: 2, animalName: "cat" },
-    { id: 3, animalName: "hamster" },
-    ];
-    
+	{ id: 1, animalName: "dog" },
+	{ id: 2, animalName: "cat" },
+	{ id: 3, animalName: "hamster" },
+];
 
-router.get("/", function(req, res){
-    console.log(animalArray)
-    // res.render("index")
-    res.json({ animalArray })
-})
+router.get("/", function (req, res) {
+	console.log(animalArray);
+	// res.render("index")
 
+	let foundAnimal = null;
+	console.log(`URL QUERY LENGTH: ${Object.keys(req.query).length}`);
+	if (Object.keys(req.query).length === 0) {
+		res.json({ animalArray });
+	} else {
+		animalArray.forEach((animal) => {
+			if (animal.animalName === req.query.animal) {
+				foundAnimal = animal;
+			}
+		});
+		if (!foundAnimal) {
+			return res.send("Animal not found, please check your spelling");
+		} else {
+			return res.json({ foundAnimal });
+		}
+	}
+});
 
-module.exports = router
+module.exports = router;
