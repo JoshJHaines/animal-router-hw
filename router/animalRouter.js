@@ -64,6 +64,37 @@ router.post("/add-animal", function (req, res) {
             })
 		}
 	;}
+	res.json({ animalArray });
+});
+
+router.post("/delete-animal", function (req, res) {
+    return res.send("path exists");
+	// console.log(req.body);
+    // let inputAnimal = req.body.animalName
+    // let foundAnimal = null
+
+    // if(inputAnimal.length === 0){
+    //     return res.send("Sorry no empty data!");
+    // } else {
+    //     animalArray.forEach((animal) => {
+	// 		//if there is a match, set truthy value for search
+	// 		if (animal.animalName === inputAnimal){
+	// 			foundAnimal = animal;
+    //             console.log(foundAnimal)
+	// 		}
+	// 	})
+    //     //if truthy value is true, return an error to guide user
+	// 	if (foundAnimal) {
+	// 		return res.send("The animal already exists and please pick another animal");
+	// 		//if truthy value is true, return the animal
+	// 	} else {
+	// 		animalArray.push({
+    //             id: +`${animalArray.length + 1}`,
+    //             animalName: `${req.body.animalName}`
+    //         })
+	// 	}
+	// ;}
+	// res.json({ animalArray });
 });
 
 module.exports = router;
