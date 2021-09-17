@@ -98,8 +98,9 @@ router.delete("/delete-animal", function (req, res) {
             // console.log('FOUND ANIMAL:',foundAnimal)
             // console.log("INDEX OF", animalArray.indexOf(foundAnimal))
 			// console.log("AnArr[0] Matches FoundAn:", animalArray[0] === foundAnimal)
-            animalArray.splice(animalArray.indexOf(foundAnimal), 1)
-			return res.json(animalArray);
+            
+			animalArray.splice(animalArray.indexOf(foundAnimal), 1)
+			return res.send(`${foundAnimal.animalName} has been deleted!`)
 		}
 	}
 });
