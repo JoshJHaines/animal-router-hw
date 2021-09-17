@@ -17,7 +17,7 @@ app.use(express.json());
 
 app.use("/api/animal", animalRouter)
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 
 
 app.listen(PORT, function(){

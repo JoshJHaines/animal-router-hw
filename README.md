@@ -44,21 +44,21 @@ let animalArray = [
 
 - [x] create a Get request that uses params animalName to query to animal by animalName
 
-- [ ] create a Post request to create a new animal and if there's duplicate in the array, you should let the user know that the animal already exists and please pick another animal. If the user sends in an empty object your program will tell the user "sorry no empty data"
+- [x] create a Post request to create a new animal and if there's duplicate in the array, you should let the user know that the animal already exists and please pick another animal. If the user sends in an empty object your program will tell the user "sorry no empty data"
   - [x] create animal
   - [x] checks for duplicate
   - [x] checks for empty
 
-- [ ] create a Put request to update the animalName using animalName params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesnt exists it should tell the user animal doesn't exists please check your spelling
+- [ ] create a Put request to update the animalName using animalName params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesn't exists it should tell the user animal doesn't exists please check your spelling
 
-- [ ] create a Put request to update the animalName using ID params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesnt exists it should tell the user animal doesnt exists please check your spelling
+- [ ] create a Put request to update the animalName using ID params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesn't exists it should tell the user animal doesn't exists please check your spelling
 
-- [ ] create a delete request to delete the animalName using animalName params. If successfully deleted, your program should tell the user that successfully deleted the animal, and returns the deleted animal to the user. create a Put request to update the animalName using params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesn't exists it should tell the user animal doesnt exists please check your spelling
+- [x] create a delete request to delete the animalName using animalName params. If successfully deleted, your program should tell the user that successfully deleted the animal, and returns the deleted animal to the user. create a Put request to update the animalName using params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesn't exists it should tell the user animal doesn't exists please check your spelling
   - [x] No input, return error
   - [x] Wrong input, return error
-  - [ ] deletes named animal, states successfully deleted
+  - [x] deletes named animal, states successfully deleted
 
-- [ ] create a delete request to delete the animalName using ID params. If successfully deleted, your program should tell the user that successfully deleted the animal, and returns the deleted animal to the user. create a Put request to update the animalName using params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesnt exists it should tell the user animal doesnt exists please check your spelling
+- [x] create a delete request to delete the animalName using ID params. If successfully deleted, your program should tell the user that successfully deleted the animal, and returns the deleted animal to the user. create a Put request to update the animalName using params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesn't exists it should tell the user animal doesn't exists please check your spelling
     - [x] No input, return error
     - [x] Wrong input, return error  
-    - [ ] deletes named animal, states successfully deleted
+    - [x] deletes named animal, states successfully deleted

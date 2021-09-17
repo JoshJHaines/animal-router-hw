@@ -93,13 +93,13 @@ router.delete("/delete-animal", function (req, res) {
 			return res.send("Animal not found, please check your spelling");
 			//if truthy value is true, return the animal
 		} else {
-            // animalArray.splice(findIndex(foundAnimal), 1)
-            console.log('FULL ARRAY:',animalArray)
-			console.log('ARRAY 0:',animalArray[0])
-            console.log('FOUND ANIMAL:',foundAnimal)
-            console.log("INDEX OF", animalArray.indexOf(`${foundAnimal.id}`))
-			console.log("AnArr[0] Matches FoundAn:", animalArray[0] === foundAnimal)
-			return res.json({ foundAnimal });
+			// console.log('FULL ARRAY:',animalArray)
+			// console.log('ARRAY 0:',animalArray[0])
+            // console.log('FOUND ANIMAL:',foundAnimal)
+            // console.log("INDEX OF", animalArray.indexOf(foundAnimal))
+			// console.log("AnArr[0] Matches FoundAn:", animalArray[0] === foundAnimal)
+            animalArray.splice(animalArray.indexOf(foundAnimal), 1)
+			return res.json(animalArray);
 		}
 	}
 });
