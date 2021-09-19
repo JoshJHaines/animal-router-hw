@@ -49,15 +49,15 @@ let animalArray = [
   - [x] checks for duplicate
   - [x] checks for empty
 
-- [ ] create a Put request to update the animalName using animalName params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesn't exists it should tell the user animal doesn't exists please check your spelling
+- [x] create a Put request to update the animalName using animalName params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesn't exists it should tell the user animal doesn't exists please check your spelling
   - [x] Empty data
   - [x] wrong data
-  - [ ] Updates found animal
+  - [x] Updates found animal
 
-- [ ] create a Put request to update the animalName using ID params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesn't exists it should tell the user animal doesn't exists please check your spelling
+- [x] create a Put request to update the animalName using ID params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesn't exists it should tell the user animal doesn't exists please check your spelling
   - [x] Empty data
   - [x] wrong data
-  - [ ] Updates found animal
+  - [x] Updates found animal
 
 - [x] create a delete request to delete the animalName using animalName params. If successfully deleted, your program should tell the user that successfully deleted the animal, and returns the deleted animal to the user. create a Put request to update the animalName using params. If successfully updated the name, your program should tell the user that successfully updated and send back the updated animal object. If the animal doesn't exists it should tell the user animal doesn't exists please check your spelling
   - [x] No input, return error
