@@ -105,4 +105,35 @@ router.delete("/delete-animal", function (req, res) {
 	}
 });
 
+router.put("/update-animal", function (req, res) {
+	console.log(animalArray);
+	// res.render("index")
+
+	let foundAnimal = null;
+	//see what the query length is
+	console.log(`URL QUERY LENGTH: ${Object.keys(req.query).length}`);
+	//if length is 0 then return the full array
+	if (Object.keys(req.query).length === 0) {
+		res.send("No Animal selected to update, please choose an animal");
+		//if length is not 0, search for matches
+	} else {
+		animalArray.forEach((animal) => {
+			//if there is a match, set truthy value for search
+			if (
+				animal.animalName === req.query.animal ||
+				animal.id === +req.query.id
+			) {
+				foundAnimal = animal;
+			}
+		});
+		//if truthy value is NOT true, return an error to guide user
+		if (!foundAnimal) {
+			return res.send("Animal not found, please check your spelling");
+			//if truthy value is true, return the animal
+		} else {
+			return res.json({ foundAnimal });
+		}
+	}
+});
+
 module.exports = router;
